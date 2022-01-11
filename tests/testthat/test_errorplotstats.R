@@ -21,16 +21,20 @@ test_that("format of resultant data frame is as expected", {
 })
 
 test_that("column means are calculated as expected", {
+  skip_on_cran()
+  skip_on_os("windows")
   suppressWarnings(expect_setequal(
-    errorstats_mean_se$y,
-    colMeans(iris_sub)
+    round(errorstats_mean_se$y,3),
+    round(as.numeric(sapply(iris_sub, mean)),3)
   ))
 })
 
 test_that("column medians are calculated as expected", {
+  skip_on_cran()
+  skip_on_os("windows")
   suppressWarnings(expect_setequal(
-    errorstats_median_iqr$y,
-    sapply(iris_sub, median)
+    round(errorstats_median_iqr$y,3),
+    round(as.numeric(sapply(iris_sub, median)),3)
   ))
 })
 
