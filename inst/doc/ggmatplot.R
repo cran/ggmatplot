@@ -64,7 +64,7 @@ iris_numeric_long %>%
   geom_density()
 
 ## ----iris-ggmatplot-density-plot----------------------------------------------
-ggmatplot(iris_numeric, plot_type = "density")
+ggmatplot(iris_numeric, plot_type = "density", alpha = 0)
 
 ## ----airline-data-------------------------------------------------------------
 AirPassengers <- matrix(AirPassengers,

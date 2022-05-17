@@ -1,6 +1,6 @@
 Package: ggmatplot
 Title: Plot Columns of Two Matrices Against Each Other Using 'ggplot2'
-Version: 0.1.1
+Version: 0.1.2
 Authors@R: c(
     person("Xuan", "Liang", 
             email = "xuan.liang@anu.edu.au",
@@ -31,15 +31,16 @@ Encoding: UTF-8
 RoxygenNote: 7.1.2
 Depends: R (>= 3.4.0), ggplot2
 Imports: stats
-Suggests: rmarkdown, knitr, testthat, vdiffr, tibble, tidyr, dplyr,
-        covr
+Suggests: rmarkdown, knitr, testthat (>= 3.0.0), vdiffr, tibble, tidyr,
+        dplyr, covr
 VignetteBuilder: knitr
+Config/testthat/edition: 3
 NeedsCompilation: no
-Packaged: 2022-01-09 07:45:09 UTC; taozou
+Packaged: 2022-05-17 01:27:13 UTC; taozou
 Author: Xuan Liang [aut, cre] (<https://orcid.org/0000-0002-0792-3751>),
   Francis K. C. Hui [aut] (<https://orcid.org/0000-0003-0765-3533>),
   Emi Tanaka [aut] (<https://orcid.org/0000-0002-1455-259X>),
   Dilinie Seimon [aut] (<https://orcid.org/0000-0003-4431-6077>)
 Maintainer: Xuan Liang <xuan.liang@anu.edu.au>
 Repository: CRAN
-Date/Publication: 2022-01-11 09:02:45 UTC
+Date/Publication: 2022-05-17 02:20:02 UTC
